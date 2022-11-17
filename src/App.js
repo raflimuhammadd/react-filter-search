@@ -8,7 +8,7 @@ import { data } from './data.js';
 
 
 function App() {
-  const [contacts, setContacts] = useState(data);
+
   const [search, setSearch] = useState('');
 
 
@@ -37,8 +37,8 @@ function App() {
           </thead>
           <tbody>
             {data.filter((item) => {
-              return search.toLowerCase() === '' ? item : item.last_name.
-            toLowerCase().includes(search)  
+              return search.toLowerCase() === '' ? item : item.last_name
+              .toLowerCase().includes(search)  
             })
             .map((item) => (
               <tr key={(item.id)}>
