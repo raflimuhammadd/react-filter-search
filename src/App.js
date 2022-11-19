@@ -8,10 +8,7 @@ import { data } from './data.js';
 
 
 function App() {
-
   const [search, setSearch] = useState('');
-
-
 
   return (
     <div>
